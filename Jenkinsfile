@@ -1,18 +1,20 @@
 pipeline {
-    agent any  // Runs on any available agent
+    agent any
 
     stages {
-        stage('Stage 1') {
+        stage('Greet') {
             steps {
-                echo 'Hello World!'
+                echo 'Hello there!'
             }
         }
-        stage('Stage 2') {
+
+        stage('Feature Info') {
             steps {
-                echo 'This is my first Jenkinsfile!'
+                echo 'This is the feature1 branch!'
             }
         }
-        stage('Stage 3') {
+
+        stage('Thanks') {
             steps {
                 echo 'Thank you!'
             }
